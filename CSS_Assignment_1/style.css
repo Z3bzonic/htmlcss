@@ -1,0 +1,204 @@
+/*split per section*/
+
+/*general*/
+.fltleft{
+float:left;
+}
+
+.clrleft{
+clear:left;
+}
+
+.clrboth{
+    clear:both;
+    }
+
+/*coloredboxes*/ 
+button{
+    color:blue;
+    border-style: dashed;
+    height: 100px;
+    }
+
+button:hover{
+color:yellow;
+border-style: dashed;
+height: 100px;
+}
+
+div{
+display:block;
+}
+
+.box{
+border:3px;
+width:300px;
+text-align:center;
+margin:20px;
+padding:20px;
+}
+
+.redwhite{
+background-color:red;
+color:white;
+}
+
+.redwhite:hover{
+background-color:blue;
+}
+
+.greenwhite{
+background-color:green;
+color:white;
+}
+
+.greenwhite:hover{
+background-color:orange;
+}
+
+.bleuwhite{
+background-color:blue;
+color:white;
+}
+
+.bleuwhite:hover{
+background-color:red;
+}
+
+/*orderedlist*/
+
+.olsect{
+width:100%;
+}
+
+.olwrapper{
+    background-color:orange;
+    width: 500px;
+padding: 10px;
+}
+
+.titlebox{
+vertical-align:center;
+background-color:white;
+margin-left: 70px;
+margin-right: 70px;
+margin-top: 10px;
+margin-bottom:10px;
+text-align: center;
+}
+
+.olbox{
+background-color:white;
+margin-left: 70px;
+margin-right: 70px;
+margin-bottom:70px;
+}
+
+.olbox li {
+color: brown;
+list-style-type: decimal;
+text-align: center;
+}
+
+li:before {
+color: rgb(36, 255, 153);
+text-align: left;
+}
+
+ol::after {
+color: rgb(36, 255, 153);
+text-align: right;
+}
+
+/* unordered list*/
+.ulboxwrapper{
+ width: 100%;   
+}
+
+.ulsect{
+    background-color:yellow;
+    width:400px;
+    vertical-align:center;
+    padding: 10px;
+margin: 20px;
+float: left;
+}
+
+.ulitem{
+    text-align:center;
+    margin: 10%;
+color: darksalmon;
+list-style-type:none;
+}
+
+.uln:hover{
+    color: tomato;
+    font-size: xx-large;
+}
+
+.ulp:hover{
+    color: chartreuse;
+}
+
+/* headers*/
+
+.headerWrapper{
+    width: 100%;
+}
+
+h1{
+text-align: center;
+font-family: 'Courier New', Courier, monospace  ;
+}
+
+h2{
+    text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+opacity: 0.9;
+}
+
+h3{
+    text-align: center;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+opacity: 0.7;
+}
+
+h4{
+    text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+opacity: 0.5;
+}
+h5{
+    text-align: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+opacity: 0.3;
+}
+h6{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0.1;
+}
+
+/*header nested p*/
+
+.hdnstpwrp{
+    width: 400px;
+    background-color: blueviolet;
+    float: left;
+}
+
+.headpbox{
+
+    vertical-align: center;
+    margin-left: 70px;
+margin-right: 70px;
+margin-top: 10px;
+margin-bottom:10px;
+overflow: hidden;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.articleh1{
+    text-align: left;
+}

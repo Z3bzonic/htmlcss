@@ -1,0 +1,27 @@
+*{padding: 0px;}
+*{margin: 0px;}
+
+button{
+    font-family: fantasy;
+    font-size: larger;
+    width: 40%;
+    padding: 1%;
+    margin: 1%;
+    color: whitesmoke;
+    background: rgb(14,113,115);
+    background: linear-gradient(0deg, rgba(14,113,115,1) 0%, rgba(255,174,0,1) 100%); 
+}
+
+button:hover{
+    background: rgb(14,113,115);
+    background: linear-gradient(0deg, rgba(255,174,0,1) 0%, rgba(14,113,115,1) 100%); 
+    border-radius: 5%;
+    color: rgb(1, 234, 47);
+}
+
+button:hover p{
+}
+
+.hide{
+    display: none;
+}
