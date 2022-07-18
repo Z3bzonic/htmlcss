@@ -1,200 +1,166 @@
-/*split per section*/
-/*CSS RESET*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-v2.0 | 20110126
-License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-display: block;
-}
-body {
-line-height: 1;
-}
-ol, ul {
-list-style: none;
-}
-blockquote, q {
-quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-content: '';
-content: none;
-}
-table {
-border-collapse: collapse;
-border-spacing: 0;
+header {
+    padding-top: 3%;
+    width: 70%;
+    margin-left: 18.7%;
 }
 
-/*general*/
-.fltleft{
-float:left;
+header a{
+    padding-right: 4.4%;
+    font-family: 'Courier New', Courier, monospace;    
+    color: black;
+    text-decoration: none;
 }
 
-.fltright{
-    float:right;
-    }
-
-.clrleft{
-clear:left;
+a:hover{
+    color: rgb(0, 187, 124);
 }
 
-.clrright{
-    clear:right;
+.lastlink{
+    padding-right: 2%;
 }
 
-.clrboth{
-clear:both;
-}
-/*wrapper*/
-
-    .wrapper{
-    margin:0px auto;
-    width: 50%;
-    height: 100%;
-    background-color:brown ;
-    }
-
-    /*banner*/
-    .banwrap{
-    margin:0px auto;
-    width: 52%;
-    padding-top: 40px;
-    background-color:darkorange ;
-    height: 165px;
-    overflow: visible;
-    }
-
-        .logo{
-            background-color: brown;
-            width: 318px;
-        }
-
-        .logo img{
-            height: 100%;
-            width: 100%;
-            float: left;
-        }
-
-        .topmenu{
-            padding-left: 50%;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-            font-size: 16px;
-        }
-
-        .topmenu li{
-            padding-top: 10px;
-            padding-left:18px ;
-            float: left;
-        }
-
-        .social{
-            margin-left: 90%;
-        }
-
-        .social img{
-            padding-top: 5px;
-            padding-left: 5px;
-            float: right;
-            height: 25px;
-            width: 25px;
-        }
-
-
-    article img{
-        height: 100%;
-        width: 100%;
-    }
-
-    
-
-body{
-background-color: gray;
+header img{
+    padding-right: 9.5%;
+    width: 38%;
+    cap
 }
 
-/* 
-     <section>
-    <div class="wrapper">
-        <img src="img/nubia.jpg">
-      </section>
-      <section>
-        <article>
-          <img src="img/pixabay.jpg" alt="">
-          <h1>Bar Mitshua</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum autem sint corrupti, in deserunt asperiores earum enim amet numquam veritatis accusamus. Eveniet, atque. Perferendis maxime, facere sed voluptas repellat laborum.</p>
-          <a href="#">yet another link</a>
-        </article>
-        <article>
-          <img src="img/pixabay.jpg" alt="">
-          <h1>Bar Tender</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum autem sint corrupti, in deserunt asperiores earum enim amet numquam veritatis accusamus. Eveniet, atque. Perferendis maxime, facere sed voluptas repellat laborum.</p>
-          <a href="#">yet another link</a>
-        </article>
-        <article>
-          <img src="img/pixabay.jpg" alt="">
-          <h1>Bar Loca</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum autem sint corrupti, in deserunt asperiores earum enim amet numquam veritatis accusamus. Eveniet, atque. Perferendis maxime, facere sed voluptas repellat laborum.</p>
-          <a href="#">yet another link</a>
-        </article>
-      </section>
+.icon{
+    padding-left: 0%;
+    padding-right: 0.7%;
+    height: 25px;
+    width: 25px;
+}
+
+header div{
+    padding-top: 4%;
+    padding-bottom: 5.8%;
+}
+
+.mainimage{
+    margin-left: 18.4%;
+    width: 63.2%;
+    height: 450px;
+    object-position: 90% 50%;
+    object-fit:none;
+}
+figure {
+    height: 486px;
+    display: flex;
+    flex-flow:column;
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+}
+
+figure div{
+    color: black;
+    background-color: burlywood;
+    margin-left: 18.4%;
+    margin-right: 18.4%;
+}
+
+figcaption {   
+    position: relative;
+    color: rgb(255, 255, 255);
+    top: -400px;   
+    font-size: 90px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+article{
+    margin-left: 18.7%;
+}
+
+article img{
+        width: 24.08%;
+        height: 225px;
+        object-position: 90% 50%;
+        padding-right: 2.1%;
+}
+
+article h3{
+    padding-right: 2.1%;
+    text-align: center;
+    width: 24.08%;
+    float: left;
+
+}
+
+article p{
+    max-width: 24%;
+    float: left ;
+    padding-right: 2.1%;
+    text-align: center;
+}
+article a{
+    max-width: 24%;
+    padding: 0%;
+    padding: 9%;
+    color: black;
+}
+
+article br{
+    clear: left;
+}
+
+.bckgrnd{
+    margin-top: 4.3%;
+    width: 62.7%;
+    margin-left: 18.7%;
+    background-image: url("img/footerback_compressed.jpg");
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+
+footer {
+    background-color: black;
+    opacity: 0.75;
+    color: white;
+    padding-left: 5.1%;
+    padding-bottom: 15%; 
+
+}
+
+footer h2{
+    padding-top: 5%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+footer a img{
+    height: 20px;
+    width: 20px;
+    padding-left: 7%;
+}
+
+footer div span{
+    display: inline-block;
+    text-align: left;
+    width: 20%;
+}
+
+footer div span{
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+footer a{
+    color: rgb(255, 255, 255);
+}
+
+footer a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.bottom{
+    padding-top: 10%;
+    text-align: center;
+}
+
+.end{
+float: right;}
 
 
 
-      
-
-
-          <footer>
-      <h1></h1>
-      <div class="footermenu">
-      <ul>
-        <li><h3>test</h3></li>
-        <li><a href="#">yet another link</a></li>
-        <li><a href="#">yet another link</a></li>
-        <li><a href="#">yet another link</a></li>
-      </ul> 
-      <ul>
-        <li><h3>test</h3></li>
-        <li><a href="#">yet another link</a></li>
-        <li><a href="#">yet another link</a></li>
-        <li><a href="#">yet another link</a></li>
-      </ul> 
-      <ul>
-        <li><h3>test</h3></li>
-        <li><a href="#">yet another link</a></li>
-        <li><a href="#">yet another link</a></li>
-        <li><a href="#">yet another link</a></li>
-      </ul> 
-      <ul>
-        <li><h3>test</h3></li>
-        <li><a href="#">yet another link</a></li>
-        <li><a href="#">yet another link</a></li>
-        <li><a href="#">yet another link</a></li>
-      </ul> 
-    </div>
-    <div> disclaimer </div>
-    <div> float right </div>
-    </footer>
-      */
