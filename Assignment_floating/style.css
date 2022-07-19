@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+
+
+body{
+    margin: 0 auto;
+}
+
+h1{
+    font-family: 'lora', serif ;
+    display: flex;
+justify-content: center;
+}
+
+.blok1{
+    width: 20%;
+    float: left;
+    border-width: 5px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    margin: 0 5% 0 20%;
+}
+
+.blok2{
+    width: 20%;
+    float: left;
+    border-width: 5px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+}
+
+.blok3{
+    margin-top: 25%;
+    clear: left ;
+    width: 46%;
+    margin-left: 20%;
+    border-width: 5px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+}
+
+.wrapperdeel2{
+    background-color: pink;
+    padding: 2% 0;
+}
+
+.deel2{
+margin: 0 auto;
+width: 60%;
+}
+
+.blok4{
+    padding: 3% 1%;
+    background-color: rgb(255, 102, 255);
+    }
+
+.blok5{
+    float: left;
+    width: 80%;
+    padding: 3% 1%;
+    background-color: rgb(254, 171, 185);
+}
+
+.clearing{
+    clear: left;
+}
+
+.blok6{
+    background-color: rgb(161, 0, 142);
+}
+
+.blok6 a{
+}
+
+.blok7{
+    padding: 3% 1%;
+    background-color: rgba(255, 52, 123, 0.663);
+}
+
+.wrapperdeel3{
+background-color: antiquewhite;
+padding-top: 2%;
+}
+
+.deel3{
+    background-color: white;
+    height: 600px;
+    margin: 0 10%;
+}
+
+p{
+    padding: 0 5%;
+    float: left;
+    width: 70%;
+}
+
+img{
+    padding: 0 5%;
+    float: left;
+    height: 130px;
+
+    
+}
+
+
+
+

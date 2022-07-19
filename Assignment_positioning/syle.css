@@ -1,0 +1,99 @@
+body{
+    padding-top: 10%;
+}
+
+.banner {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 2%;
+    z-index: 1;
+}
+
+ul{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+
+}
+
+li{
+    padding: 1%;
+}
+
+a{
+    color: white;
+    font-style: normal;
+}
+
+
+.text{
+    text-align: left;
+    width: 50%;
+    margin: 2% auto;
+}
+
+.eerste{
+    width: 60%;
+    position: relative;
+}
+
+.afb1{
+    background-color: aquamarine;
+    height: 24%;
+    width: 15%;
+    position: absolute;
+    left: 59.9%;
+    top: 34.5%;
+}
+
+.tweede{
+    width: 30%;
+    position: absolute;
+    left: 44.7%;
+    top: 57.5%;
+}
+
+.afb2{
+    background-color: rgb(159, 127, 255);
+    height: 228px;
+    width: 35%;
+    position: relative;
+    left: 0px;
+}
+
+.derde{
+    width: 60%;
+    position: relative;
+}
+
+.afb3{
+    background-color: rgb(223, 227, 0);
+    height: 26.5%;
+    width: 15%;
+    position: absolute;
+    left: 59.8%;
+    top: 94.5%;
+
+}
+
+.vierde{
+    height: 25%;
+    width: 30%;
+    position: absolute;
+    left: 44.7%;
+    top: 130%;
+}
+    
+.afb4{
+    background-color: rgb(232, 127, 255);
+    width: 35%;
+    height: 200px;
+    position: relative;
+    top: 150%;
+    left: 0;
+
+}
