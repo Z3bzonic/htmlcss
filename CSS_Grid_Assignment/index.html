@@ -1,0 +1,155 @@
+<style>
+    /* gegeven: de kleuren van de vier vlakken onderaan de pagina */
+    .figuur1>div:nth-child(1) {
+        background-color: #56E39F;
+        grid-row: span 3 ;    
+    }
+    .figuur1>div:nth-child(2) {
+        background-color: #59C9A5;
+    }
+    .figuur1>div:nth-child(3) {
+        background-color: #5B6C5D;
+    }
+    .figuur1>div:nth-child(4) {
+        background-color: #27476E;
+    }
+    /* alle kleuren voor dit vlak: #56E39F #59C9A5 #5B6C5D #27476E*/
+    .figuur2>div:nth-child(1) {
+        background-color: #56E39F;
+        grid-area:  fig2_1;
+        
+    }
+    .figuur2>div:nth-child(2) {
+        background-color: #C1292E;
+        grid-area:  fig2_2;
+
+    }
+    .figuur2>div:nth-child(3) {
+        background-color: #235789;
+        grid-area:  fig2_3;
+
+    }
+    .figuur2>div:nth-child(4) {
+        background-color: #F0A202;
+        grid-area:  fig2_4;
+
+    }
+    /* alle kleuren voor dit vlak: #F1D302 #C1292E #235789 #F0A202 */
+    .figuur3>div:nth-child(1) {
+        background-color: #B3001B;
+        grid-row: span 3 ; 
+    }
+    .figuur3>div:nth-child(2) {
+        background-color: #F4E04D;
+    }
+    .figuur3>div:nth-child(3) {
+        background-color: #54F2F2;
+    }
+    .figuur3>div:nth-child(4) {
+        background-color: #5EB1BF;
+    }
+    /* alle kleuren voor dit vlak: #B3001B #F4E04D #54F2F2 #5EB1BF */
+    .figuur4>div:nth-child(1) {
+        background-color: #FF715B;
+        grid-area:  fig4_1;
+    }
+    .figuur4>div:nth-child(2) {
+        background-color: #30332E;
+        grid-area:  fig4_2;
+    }
+    .figuur4>div:nth-child(3) {
+        background-color: #62BBC1;
+        grid-area:  fig4_3;
+    }
+    .figuur4>div:nth-child(4) {
+        background-color: #EC058E;
+        grid-area:  fig4_4;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 20%);
+        grid-template-rows: repeat(2, 4fr);        
+        justify-content: center;
+        align-content: center;
+        grid-gap: 25px 50px;
+    }
+
+    .figuur1{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 2fr 2fr 2fr;   
+        height: 150px;
+     
+    }
+
+    .figuur2{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 2fr 2fr 2fr;   
+        height: 150px;
+grid-template-areas: "fig2_2 fig2_1"
+                     "fig2_3 fig2_1"
+                     "fig2_4 fig2_1"; 
+    }
+
+    .figuur3{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 2fr 2fr 2fr;   
+        height: 150px;
+     
+    }
+
+    .figuur4{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 2fr 2fr 2fr;   
+        height: 150px;
+        grid-template-areas: "fig4_2 fig4_1"
+                     "fig4_3 fig4_1"
+                     "fig4_4 fig4_1"; 
+    }
+    /* alle kleuren voor dit vlak: #FF715B #30332E #62BBC1 #EC058E */
+    /* einde van de gegeven kleuren van de vlakken */
+</style>
+</head>
+<body>
+    <main>
+        <section class="sectie1">
+            <div class="figuur1">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <p></p>
+        </section>
+        <section class="sectie2">
+            <div class="figuur2">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <p></p>
+        </section>
+        <section class="sectie3">
+            <div class="figuur3">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <p></p>
+        </section>
+        <section class="sectie4">
+            <div class="figuur4">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <p></p>
+        </section>
+    </main>

@@ -1,0 +1,264 @@
+
+
+nav{
+    grid-area: nav;
+}
+
+.search{
+    grid-area: search;
+}
+
+.mobban{
+    grid-area: mobban;
+}
+
+.banner{
+    grid-area: ban;
+}
+
+.article-1{
+    grid-area: article-1;
+}
+
+.article-2{
+    grid-area: article-2;
+}
+
+.article-3{
+    grid-area: article-3;
+}
+
+.article-4{
+    grid-area: article-4;
+}
+
+.special{
+    grid-area: special;
+}
+
+.quote{
+    grid-area: quote;
+}
+
+.cta{
+    grid-area: cta;
+}
+
+.mobile-nav-wrapper{
+    position: fixed;
+    width: 100%;
+    text-align: end;
+    background-color: darkkhaki;
+    max-height: 44px; 
+}
+
+.mobile-nav-wrapper button{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    position: relative;
+    right: 10%;
+    width: 6%;
+}
+
+.mobile-nav-wrapper hr{
+    width: 22px;
+    height: 4px;
+    padding: 1px;   
+    background-color: beige; 
+}
+
+.mobile-nav-menu{
+    position: fixed;
+    justify-content: center;
+    text-align: right;
+    display: none;
+    width: 50%;
+    right: 0;
+    top: 75px;
+}
+
+.mobile-nav-menu li{
+    padding-right: 5px;
+    padding-bottom: 15px;
+    list-style-type: none;
+    background-color: aliceblue;
+}
+
+.mobile-nav-menu a{
+    color: rgb(0, 123, 6);
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration:none;
+}
+
+.nav-wrapper{
+    display: none;
+    background-color: darkkhaki;
+    width: 125%;
+}
+
+.search, .article-1, .article-2, .article-3, .article-4, .special, .quote{
+    display: none;
+}
+
+.nav-wrapper li{
+    color: rgb(43, 249, 88);
+    font-size: 2rem;
+    list-style-type: none;
+}
+
+.mobile-nav-wrapper button:focus + .mobile-nav-menu{
+    display:inline-block;
+}
+
+.mobile-banner{
+    background-color: peru;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.banner{
+    display: none;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 16px 100px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    grid-gap: 10px
+}
+
+article img{
+    height: auto;
+    width: 100%;
+    object-fit:contain;
+}
+
+.ctabtn{
+    display: flex;
+    justify-content: center;
+    align-self: center; 
+    height: 50%;
+    width: auto;
+    padding-top: 5%;
+}
+
+section button{
+    background-color: green;
+    color: white;
+}
+
+@media screen and (max-width: 720px){
+.article-1{
+    display: inline;
+}
+.article-2{
+    display: inline;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 44px 44px auto 44px 80px;
+    grid-template-areas: 
+    "nav nav"
+    "mobban mobban"
+    "article-1 article-2"
+    "cta cta"
+}
+}
+
+@media screen and (min-width: 720px){
+hr,.mobile-nav-wrapper,.mobile-banner, .mobban{
+    display: none;
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88px;
+}
+
+.nav-wrapper li{
+    display: inline;
+    color: rgb(43, 249, 88);
+    font-size: 1.5rem;
+    list-style-type: none;
+}
+
+.banner{
+    display: inline-block;
+}
+
+.banner img{
+    height: 100px;
+    width: 100%;
+}
+
+.article-1{
+    display: inline;
+}
+
+.article-2{
+    display: inline;
+}
+
+.article-3{
+    display: inline;
+}
+
+article img{
+    height: 250px;
+    object-fit:contain;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88px;
+    background-color: darkkhaki;
+}
+
+.quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 5% 20%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(110px,240px));
+    grid-template-rows: 88px 120px auto 88px 88px;
+    align-content: space-around;
+    justify-content: space-between;
+    grid-template-areas: 
+    "nav nav search"
+    "ban ban ban"
+    "article-1 article-2 article-3"
+    "quote quote quote"
+    "cta cta cta"
+}
+}
+
+@media screen and (min-width: 1024px){
+.nav-wrapper{
+    display: inline-block;
+} 
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 44px 44px auto 44px 80px;
+    grid-template-areas: 
+    "nav nav"
+    "ban ban"
+    "article-1 article-2"
+    "cta cta"
+}    
+}
