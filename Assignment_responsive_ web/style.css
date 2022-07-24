@@ -1,0 +1,519 @@
+@media screen and (max-width: 720px){
+.article3, .article4, .quote, .blog, .banner img, .search{
+    display: none;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: repeat(7, 70px);
+    grid-template-areas:    
+    "nav nav"
+    "ban ban"
+    "article1 article2"
+    "article1 article2"
+    "article1 article2"
+    "article1 article2"
+    "footer footer"
+}
+
+.navigation{
+    grid-area: nav ;
+    background-color: slategrey; 
+    display: flex;
+    justify-content: end;
+    align-items: center; 
+    width: auto;
+    height: 70px;
+}
+
+.navigation hr{
+    background-color: bisque;
+    height: 10%;
+}
+
+.mobnav{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    width: 50px;
+    height: 80%;
+}
+
+.menu{
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 70px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration:none;
+    line-height: 1.5em;
+    background-color: rgb(46, 255, 91);
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.navigation button:focus + .menu{
+    display: inline-block ;  
+}
+
+.banner{
+    grid-area: ban ;
+    background-color: rgb(46, 255, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(92, 122, 230);
+
+}
+
+.article1{
+    grid-area: article1 ;
+    height: auto;
+    object-fit:cover;
+    margin: 5px;
+}
+
+.article1 img{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    object-fit:cover;
+}
+
+.article1 h3, p{
+    font-family: 'Merriweather', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.article2{
+    grid-area: article2 ;
+    height: auto;
+    object-fit:cover;
+    margin: 5px;
+}
+
+.article2 img{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    object-fit:cover;
+}
+
+.article2 h3, p{
+    font-family: 'Merriweather', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.footer{
+    grid-area: footer ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.footer button{
+    background-color: forestgreen;
+    color: antiquewhite;
+    font-size: larger;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 720px){
+    .article4, .blog, .mobnav, .banner h1{
+        display: none;
+    }
+    
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(8, 70px);
+        grid-template-areas:    
+        "nav nav nav"
+        "ban ban ban"
+        "article1 article2 article3"
+        "article1 article2 article3"
+        "article1 article2 article3"
+        "article1 article2 article3"
+        "quote quote quote"
+        "footer footer footer"
+    }
+    
+    .navigation{
+        grid-area: nav ;
+        background-color: slategrey; 
+        display: flex;
+        width: 100%;
+        height: 70px;
+    }
+
+    .search{
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-right: 5%;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+        background-color: slategrey; 
+    }
+    
+    .menu{
+        display: flex;
+        align-items: center;
+    }
+
+    .menu a{
+        text-decoration: none;
+        color: antiquewhite;
+        font-size: large;
+    }
+
+    .menu li{
+        display: inline;
+        padding: 0 5px;
+    }
+        
+    .banner{
+        grid-area: ban ;
+        display: flex;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .banner img{
+        width: 100%;
+        object-fit:cover;
+    }
+    
+    .article1{
+        grid-area: article1 ;
+        height: auto;
+        object-fit:cover;
+        margin: 5px;
+    }
+    
+    .article1 img{
+        display: flex;
+        width: 100%;
+        height: 50%;
+        object-fit:cover;
+    }
+    
+    .article1 h3, p{
+        font-family: 'Merriweather', serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+    
+    .article2{
+        grid-area: article2 ;
+        height: auto;
+        object-fit:cover;
+        margin: 5px;
+    }
+    
+    .article2 img{
+        display: flex;
+        width: 100%;
+        height: 50%;
+        object-fit:cover;
+    }
+    
+    .article2 h3, p{
+        font-family: 'Merriweather', serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .article3{
+        grid-area: article3 ;
+        height: auto;
+        object-fit:cover;
+        margin: 5px;
+    }
+    
+    .article3 img{
+        display: flex;
+        width: 100%;
+        height: 50%;
+        object-fit:cover;
+    }
+    
+    .article3 h3, p{
+        font-family: 'Merriweather', serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+    
+    .footer{
+        grid-area: footer ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .quote{
+        grid-area: quote;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    .footer button{
+        background-color: forestgreen;
+        color: antiquewhite;
+        font-size: larger;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px){
+    .mobnav, .banner h1{
+        display: none;
+    }
+    
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(10, 70px);
+        grid-template-areas:    
+        "nav nav nav nav"
+        "ban ban ban ban"
+        "article1 article2 article3 article4"
+        "article1 article2 article3 article4"
+        "article1 article2 article3 article4"
+        "article1 article2 article3 article4"
+        ". . . ."
+        ". . . ."
+        "quote quote blog blog"
+        "footer footer footer footer"
+    }
+    
+    .navigation{
+        grid-area: nav ;
+        background-color: slategrey; 
+        display: flex;
+        width: 100%;
+        height: 70px;
+    }
+    
+    .menu{
+        display: flex;
+        align-items: center;
+    }
+
+    .menu a{
+        text-decoration: none;
+        color: antiquewhite;
+        font-size: large;
+    }
+
+    .menu li{
+        display: inline;
+        padding: 0 5px;
+    }
+        
+    .banner{
+        grid-area: ban ;
+        display: flex;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .banner img{
+        width: 100%;
+        object-fit:cover;
+    }
+    
+    .article1{
+        grid-area: article1 ;
+        height: auto;
+        object-fit:cover;
+        margin: 5px;
+    }
+    
+    .article1 img{
+        display: flex;
+        width: 100%;
+        height: 80%;
+        object-fit:cover;
+    }
+    
+    .article1 h3, p{
+        font-family: 'Merriweather', serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+    
+    .article2{
+        grid-area: article2 ;
+        height: auto;
+        object-fit:cover;
+        margin: 5px;
+    }
+    
+    .article2 img{
+        display: flex;
+        width: 100%;
+        height: 80%;
+        object-fit:cover;
+    }
+    
+    .article2 h3, p{
+        font-family: 'Merriweather', serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .article3{
+        grid-area: article3 ;
+        height: auto;
+        object-fit:cover;
+        margin: 5px;
+    }
+    
+    .article3 img{
+        display: flex;
+        width: 100%;
+        height: 80%;
+        object-fit:cover;
+    }
+    
+    .article3 h3, p{
+        font-family: 'Merriweather', serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .article4{
+        grid-area: article4 ;
+        display: inline-block;
+        height: auto;
+        object-fit:cover;
+        margin: 5px;
+    }
+    
+    .article4 img{
+        display: flex;
+        width: 100%;
+        height: 80%;
+        object-fit:fill;
+    }
+    
+    .article4 h3, p{
+        font-family: 'Merriweather', serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+    
+    .footer{
+        grid-area: footer ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .quote{
+        grid-area: quote;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        padding: 5% 10%;
+    }
+
+    .blog{
+        grid-area: blog;
+        display: flex;
+    }
+    
+    .footer button{
+        background-color: forestgreen;
+        width: 20%;
+        height: 50px;
+        color: antiquewhite;
+        font-size: larger;
+    } 
+}
